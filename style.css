@@ -1,0 +1,193 @@
+#equipmentStat p {
+    font-size: 35px;
+}
+
+#letterBorder {
+    background-image: url("images/border.png");
+    width: 300px;
+    height: 300px;
+    color: gold;
+    font-size: 250px;
+    -webkit-text-stroke: 2px black;
+    font-weight: bold;
+}
+
+#word>div {
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-image: url(images/background.jpg);
+}
+
+.stats>p {
+    border: 4px solid #e3bc88;
+    z-index: 1;
+}
+
+.bg {
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#equipmentStat>div {
+    z-index: 1;
+}
+
+#clearMsg {
+    -webkit-text-stroke: 2px black;
+    color: gold;
+    font-size: 70px;
+    font-weight: bold;
+    animation-name: opacity;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#clearTime {
+    -webkit-text-stroke: 2px black;
+    color: gold;
+    font-size: 40px;
+    font-weight: bold;
+    animation-name: opacity;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#equipmentBlock {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+}
+
+#equipmentImage {
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.stats {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#equipmentName {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#statDisplay {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 1.75s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letterBlock {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+}
+
+#letterBorder {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 2.75s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letter0 {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 3.25s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letter1 {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 3.35s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letter2 {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 3.45s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letter3 {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 3.55s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letter4 {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 3.65s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#letter5 {
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-delay: 3.75s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#completeMessage {
+    background-color: #5196f7;
+    /* border: 7px solid whitesmoke; */
+    border-radius: 20px;
+    margin-top: 15px;
+    height: 100px;
+    position: relative;
+    width: 150px;
+    left: 92.3%;
+}
+
+.double-border {
+    border: 1px solid #a09399;
+    box-shadow: inset 0 0 0 1px #ae977f, inset 0 0 0 4px #e4ca9f, inset 0 0 0 3px #ceba94, inset 0 0 0 2px #a59e8d, inset 0 0 0 1px #a58f8d;
+    /* And so on and so forth, if you want border-ception */
+}
