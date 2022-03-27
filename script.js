@@ -4,12 +4,12 @@ window.onload = function() {
     var num2 = Math.ceil(Math.random() * 20);
     var num3 = Math.ceil(Math.random() * 20);
 
+    console.log(Math.max(3, 3, 2));
+
     //stats
     document.getElementById("stat1").innerHTML = num1;
     document.getElementById("stat2").innerHTML = num2;
     document.getElementById("stat3").innerHTML = num3;
-
-    var buff = Math.ceil(Math.random() * 30);
 
     //time
     var time = num2 * num3;
@@ -19,39 +19,10 @@ window.onload = function() {
     document.getElementById("clearTime").innerHTML = timeSentence;
 
     //highest
-
     var statEvent = 1;
-    var highest = num1;
-    var statHighest = "Attack stat has";
-    document.getElementById("equipmentImage").src = "images/CherryBlossom.png";
-    document.getElementById("equipmentName").innerHTML = "Cherry Blossom";
+    var statHighest = '';
+    var highest = Math.max(num1, num2, num3);
 
-
-    if (num2 > highest) {
-        highest = num2;
-        statHighest = "Defense stat has";
-        document.getElementById("equipmentImage").src = "images/PunkishGirl.png";
-        document.getElementById("equipmentName").innerHTML = "Punkish Girl";
-
-        if (num3 > highest) {
-            highest = num3;
-            statHighest = "Speed stat has";
-            document.getElementById("equipmentImage").src = "images/BlackStuddedBoots.png";
-            document.getElementById("equipmentName").innerHTML = "Black Studded Boots";
-        }
-
-    } else {
-
-        if (num3 > highest) {
-            highest = num3;
-            statHighest = "Speed stat has";
-            document.getElementById("equipmentImage").src = "images/BlackStuddedBoots.png";
-            document.getElementById("equipmentName").innerHTML = "Black Studded Boots";
-
-        }
-    }
-
-    //duplicate
 
     if ((num1 == num2) && (num1 == num3)) {
         statHighest = "All stats have"
@@ -60,6 +31,7 @@ window.onload = function() {
         document.getElementById("equipmentName").innerHTML = "Punk Bangle";
 
     } else {
+        //dual
         if ((num1 == num2) && (num1 == highest)) {
             statHighest = "Attack and Defense stats have"
             statEvent = 2;
@@ -79,6 +51,26 @@ window.onload = function() {
             statEvent = 2;
             document.getElementById("equipmentImage").src = "images/TurtleGauntlet.png";
             document.getElementById("equipmentName").innerHTML = "Turtle Gauntlet";
+        }
+
+        //individual num1 to num3
+
+        if ((num2 != highest) && (num3 != highest)) {
+            var statHighest = "Attack stat has";
+            document.getElementById("equipmentImage").src = "images/CherryBlossom.png";
+            document.getElementById("equipmentName").innerHTML = "Cherry Blossom";
+        }
+
+        if ((num1 != highest) && (num3 != highest)) {
+            statHighest = "Defense stat has";
+            document.getElementById("equipmentImage").src = "images/PunkishGirl.png";
+            document.getElementById("equipmentName").innerHTML = "Punkish Girl";
+        }
+
+        if ((num1 != highest) && (num2 != highest)) {
+            statHighest = "Speed stat has";
+            document.getElementById("equipmentImage").src = "images/BlackStuddedBoots.png";
+            document.getElementById("equipmentName").innerHTML = "Black Studded Boots";
         }
     }
 
