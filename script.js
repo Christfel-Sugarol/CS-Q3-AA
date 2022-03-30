@@ -1,8 +1,8 @@
 window.onload = function() {
 
-    var num1 = Math.ceil(Math.random() * 20);
-    var num2 = Math.ceil(Math.random() * 20);
-    var num3 = Math.ceil(Math.random() * 20);
+    var num1 = Math.round(Math.random() * 20);
+    var num2 = Math.round(Math.random() * 20);
+    var num3 = Math.round(Math.random() * 20);
 
     console.log(Math.max(3, 3, 2));
 
@@ -102,8 +102,8 @@ window.onload = function() {
 
     //letter 
 
-    const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"];
-    var chosenLetter = letters[num1 - 1];
+    const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U"];
+    var chosenLetter = letters[num1];
     document.getElementById("letterBorder").innerHTML = chosenLetter;
 
     //word 
